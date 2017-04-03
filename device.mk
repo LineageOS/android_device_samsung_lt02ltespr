@@ -14,15 +14,15 @@
 # limitations under the License.
 #
 
-# Inherit from serrano-common
-$(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
-$(call inherit-product, device/samsung/serrano-common/nfc.mk)
+# Inherit from lt02ltexx-common
+$(call inherit-product, device/samsung/lt02ltexx-common/lt02ltexx-common.mk)
+$(call inherit-product, device/samsung/lt02ltexx-common/nfc.mk)
 
 # Also get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/serranoltexx/serranoltexx-vendor.mk)
+$(call inherit-product, vendor/samsung/lt02ltespr/lt02ltespr-vendor.mk)
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serranoltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/lt02ltespr/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \

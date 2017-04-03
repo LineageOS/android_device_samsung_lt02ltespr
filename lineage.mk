@@ -17,12 +17,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from serranoltexx device
-$(call inherit-product, device/samsung/serranoltexx/device.mk)
+$(call inherit-product, device/samsung/lt02ltespr/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_serranoltexx
-PRODUCT_DEVICE := serranoltexx
+PRODUCT_NAME := lineage_lt02ltespr
+PRODUCT_DEVICE := lt02ltespr
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
+PRODUCT_MODEL := SM-T217S
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="samsung/lt02ltespr/lt02ltespr:4.4.2/KOT49H/T217SVPUBOH1:user/release-keys" \
+    PRIVATE_BUILD_DESC="lt02ltespr-user 4.4.2 KOT49H T217SVPUBOH1 release-keys"

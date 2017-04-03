@@ -22,13 +22,13 @@
 #
 
 # Inherit from common serrano
--include device/samsung/serrano-common/BoardConfigCommon.mk
+-include device/samsung/lt02ltexx-common/BoardConfigCommon.mk
 
 # Inherit from proprietary vendor
--include vendor/samsung/serranoltexx/BoardConfigVendor.mk
+-include vendor/samsung/lt02ltespr/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := serranolte,serranoltebmc,serranoltektt,serranoltexx
+TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_eur_lte_defconfig
@@ -39,10 +39,8 @@ BOARD_HAVE_NFC := true
 # BLN
 BOARD_HAVE_GENERIC_BLN := true
 
+# Kernel
+TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
+
 # Charger
 BOARD_NO_CHARGER_LED := true
-
-# Vendor Init
-TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_serranolte
-TARGET_RECOVERY_DEVICE_MODULES := libinit_serranolte
