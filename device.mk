@@ -15,7 +15,7 @@
 #
 
 # Inherit from lt02ltexx-common
-$(call inherit-product, device/samsung/lt02ltexx-common/lt02ltexx-common.mk)
+$(call inherit-product, device/samsung/lt02lte-common/lt02lte-common.mk)
 
 # Also get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/lt02ltespr/lt02ltespr-vendor.mk)

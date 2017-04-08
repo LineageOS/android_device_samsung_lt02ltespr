@@ -22,7 +22,7 @@
 #
 
 # Inherit from common serrano
--include device/samsung/lt02ltexx-common/BoardConfigCommon.mk
+-include device/samsung/lt02lte-common/BoardConfigCommon.mk
 
 # Inherit from proprietary vendor
 -include vendor/samsung/lt02ltespr/BoardConfigVendor.mk
