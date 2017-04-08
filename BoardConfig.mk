@@ -31,9 +31,6 @@
 TARGET_OTA_ASSERT_DEVICE := lt02lte,lt02ltespr
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8930_serrano_eur_lte_defconfig
-
-# Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8930_lt02_spr_defconfig
 
 # Charger
