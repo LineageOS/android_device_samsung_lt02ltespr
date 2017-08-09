@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export DEVICE_COMMON=lt02lte-common
+export DEVICE=lt02ltespr
+export VENDOR=samsung
+
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
